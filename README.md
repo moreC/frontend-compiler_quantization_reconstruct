@@ -51,6 +51,10 @@ contain a few configuration files for tools
 
 
 - examples
+
+example codes for using the compiler, quantization and reconstruction tools
+
+More details can be found in [Frontend Compiler Example Documentation](examples/Frontend_Compiler_Examples.md)
 ```
 |-- README.md
 |-- mxnet_eval.py
@@ -66,7 +70,6 @@ contain a few configuration files for tools
 |-- test_tvm_recontructor.py
 ```
 
-More details can be found in [Frontend Compiler Example Documentation](examples/Frontend_Compiler_Examples.md)
 
 - projects
 
