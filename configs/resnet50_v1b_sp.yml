@@ -1,0 +1,17 @@
+MODEL:
+    graph: './models/sparse_resnet50v1b/IR_fused_for_CModel_graph.json'
+    params: './models/sparse_resnet50v1b/IR_fused_for_CModel_params.npz'
+QUAN:
+    strategy: 'symmetry_max' # minmax, null, scale_shift, symmetry_max
+    qconfig:
+        weight_quan: 'perlayer' # perchannel , perlayer
+        table: 'calibrations/resnet50_v1b_sp.json'
+        image_path: './models/image_for_calibrate'
+        # image_path: '../tools/images/'
+EVALUATION:
+    input_images: './models/image_for_compare'
+    label_file: 'models/imagenet_lsvrc_2015_synsets.txt'
+    image_file: 'models/imagenet_fulltest.list'
+    input_node: '0:0'
+    output_node: '506:0'
+SAVE_PATH: 'pbs/resnet50_v1b_sp_quan.pb'
