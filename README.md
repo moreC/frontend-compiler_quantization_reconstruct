@@ -21,12 +21,6 @@ docker run -ti -v /path/to/your/file/directory:/directory_name xhxian/frontendco
 |-- configs
 |-- examples
 |-- projects
-|   |-- fast_prune
-|   |   -- fast_pruning
-|   |       |-- core
-|   |       |-- data
-|   |       |-- optimizer
-|   |       -- pruning
 |   |-- tensorflow
 |   |   -- cifar10
 |   |       -- include
