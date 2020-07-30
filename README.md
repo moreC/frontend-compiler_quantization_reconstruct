@@ -220,7 +220,7 @@ SAVE_PATH: 'pbs/resnet50_v1b_quan.pb'
 - EVALUATION
     - input_node: graph node 0
     - output_node: graph node last
-    - input_image: 分析最终网络误差
+    - input_image: evaluation images 
     - label_file: imagenet label file
     - image_file: imagenet image list file
 - SAVE_PATH: quantization pb save path
